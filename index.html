@@ -1,100 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Dhrumil Popat | Backend Software Engineer</title>
-  <meta name="description" content="Backend Software Engineer with 7+ years of experience in high-scale systems, payments, and distributed architectures." />
+
+  <meta name="description"
+        content="Backend Software Engineer with 7+ years of experience in fintech, payments, distributed systems, and scalable backend platforms." />
+
+  <meta name="keywords"
+        content="Backend Engineer, Golang, Fintech, UPI, Distributed Systems, Microservices, AWS, PostgreSQL" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Dhrumil Popat</h1>
-    <p class="subtitle">Backend Software Engineer (SDE 3)</p>
-    <p class="contact">
-      Bangalore, India ·
-      <a href="mailto:dhruvpopat42@gmail.com">dhruvpopat42@gmail.com</a> ·
-      +91 8655342808
-    </p>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- Terminal Intro -->
+  <header class="terminal">
+    <div class="terminal-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <pre class="terminal-body">
+<span class="prompt">$</span> whoami
+<span class="output">Dhrumil Popat</span>
+
+<span class="prompt">$</span> role
+<span class="output">Backend Software Engineer (SDE 3)</span>
+
+<span class="prompt">$</span> location
+<span class="output">Bangalore, India</span>
+
+<span class="prompt">$</span> contact
+<span class="output"><a href="mailto:dhruvpopat42@gmail.com">dhruvpopat42@gmail.com</a></span>
+    </pre>
   </header>
 
   <main>
+    <!-- Summary -->
     <section>
-      <h2>Professional Summary</h2>
+      <h2>// Summary</h2>
       <p>
         Backend-focused Software Engineer with 7+ years of experience building
-        high-scale, performance-critical APIs and distributed systems.
-        Proven expertise in designing reliable, highly available services,
-        handling real-world production load, and improving system stability.
-        Strong ownership mindset with focus on clean architecture and long-term maintainability.
+        high-scale fintech systems and performance-critical APIs. Strong
+        experience in UPI payments, settlement systems, distributed services,
+        and database optimization at production scale.
       </p>
     </section>
 
+    <!-- Skills -->
     <section>
-      <h2>Technical Skills</h2>
-      <ul class="skills">
-        <li><strong>Languages:</strong> Golang, JavaScript, Python, PHP</li>
-        <li><strong>Backend:</strong> Goa, Go-Swagger, Node.js, Express.js, Loopback</li>
-        <li><strong>Databases:</strong> PostgreSQL, Aurora, MySQL, MongoDB, Redis</li>
-        <li><strong>Messaging:</strong> RabbitMQ, AWS SQS</li>
-        <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Terraform, Vault</li>
-        <li><strong>Observability:</strong> Grafana, Elasticsearch, Kibana</li>
-        <li><strong>Tools:</strong> Git, Postman, JIRA</li>
-        <li><strong>Architecture:</strong> Microservices, Orchestration, Distributed Systems</li>
-      </ul>
+      <h2>// Technical Skills</h2>
+      <div class="skill-grid">
+        <span>Golang</span><span>Goa</span><span>Go-Swagger</span>
+        <span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span>
+        <span>MySQL</span><span>Redis</span><span>AWS</span>
+        <span>Docker</span><span>Kubernetes</span>
+        <span>RabbitMQ</span><span>AWS SQS</span>
+        <span>Elasticsearch</span><span>Grafana</span>
+        <span>Terraform</span><span>Vault</span><span>Git</span>
+      </div>
     </section>
 
+    <!-- Setu Experience -->
     <section>
-      <h2>Work Experience</h2>
+      <h2>// Work Experience: Setu (Pine Labs)</h2>
+      <p class="date">Software Development Engineer 3 · Nov 2021 – Present</p>
 
-      <article>
-        <h3>Setu (Pine Labs) — Software Development Engineer 3</h3>
-        <p class="date">Nov 2021 – Present</p>
+      <article class="git-commit">
+        <div class="commit-hash">commit a91f2d3</div>
+        <h3 class="commit-title">feat: build UPI payee & QR payment stack</h3>
         <ul>
-          <li>Developed the UPI payee stack from scratch, contributing to critical payment flows including Payment Authorization and Credit.</li>
-          <li>Integrated NPCI complaint APIs to enable UDIR for instant refunds.</li>
-          <li>Implemented credit leg in collect request flows.</li>
-          <li>Built static and dynamic QR solutions handling ~7 lakh transactions daily.</li>
-          <li>Enabled RuPay credit card payments on UPI.</li>
-          <li>Designed transaction velocity checks processing ₹10–50 Cr per day.</li>
-          <li>Built “Infinite VPA” system collecting ₹16+ Cr monthly without storing millions of VPAs.</li>
-          <li>Developed settlement engine processing ~₹30 Cr payouts daily.</li>
-          <li>Built reconciliation engine handling 10L+ transactions and ~31K refunds daily.</li>
-          <li>Designed and optimized core databases using partitioning strategies.</li>
-          <li>Automated partitioning and archival using AWS Lambda and EventBridge.</li>
-          <li>Implemented PgBouncer to control DB idle connections and reduce load spikes.</li>
+          <li>Built UPI payee stack from scratch covering auth, credit & refunds (UDIR)</li>
+          <li>Developed static & dynamic QR solutions handling ~7L txns/day</li>
+          <li>Enabled RuPay credit card payments in UPI flows</li>
         </ul>
       </article>
 
-      <article>
-        <h3>MyGlamm — Software Development Engineer</h3>
-        <p class="date">Sep 2018 – Nov 2021</p>
+      <article class="git-commit">
+        <div class="commit-hash">commit b82ac11</div>
+        <h3 class="commit-title">feat: settlement & reconciliation engine</h3>
         <ul>
-          <li>Led migration from monolith architecture to microservices.</li>
-          <li>Built backend APIs and services supporting multiple products.</li>
-          <li>Developed data migration tools using Express.js, MongoDB, and RabbitMQ.</li>
-          <li>Integrated third-party services such as Bitly, Branch.io, Rebrandly, TinyPNG, and Jimp.</li>
-          <li>Built media upload service with image compression and resizing on Amazon S3.</li>
-          <li>Automated daily email reports for revenue, discounts, and product performance.</li>
-          <li>Created a wallet summary tool using PHP and jQuery DataTables.</li>
+          <li>Settlement engine processing ~₹30 Cr payouts daily</li>
+          <li>Reconciliation for 10L+ txns & ~31K refunds/day</li>
+          <li>Designed core DB schemas with heavy partitioning</li>
         </ul>
+      </article>
 
-        <p><strong>Clients / Products:</strong> L’Occitane Brazil, POPxo, Plixxo</p>
+      <article class="git-commit">
+        <div class="commit-hash">commit c73bb90</div>
+        <h3 class="commit-title">perf: scale database & transaction reliability</h3>
         <ul>
-          <li>Built store locator and billing microservices for L’Occitane Brazil.</li>
-          <li>Automated stock sync and FTP-based customer/order data pipelines.</li>
-          <li>Developed Elasticsearch-based user search and discovery for Plixxo.</li>
+          <li>Automated partitioning & archival using Lambda + EventBridge</li>
+          <li>Converted monthly partitions to daily/weekly at scale</li>
+          <li>Introduced PgBouncer to control DB idle connections</li>
+        </ul>
+      </article>
+
+      <article class="git-commit">
+        <div class="commit-hash">commit d61eaa2</div>
+        <h3 class="commit-title">feat: infinite VPA loan collection system</h3>
+        <ul>
+          <li>System to collect loan repayments without storing millions of VPAs</li>
+          <li>₹16+ Cr monthly collections with push-to-VPA support</li>
+          <li>Velocity checks processing ₹10–50 Cr/day</li>
         </ul>
       </article>
     </section>
 
+    <!-- MyGlamm Experience -->
     <section>
-      <h2>Education</h2>
+      <h2>// Work Experience: MyGlamm</h2>
+      <p class="date">Software Development Engineer · Sep 2018 – Nov 2021</p>
+
+      <article class="git-commit">
+        <div class="commit-hash">commit 91af320</div>
+        <h3 class="commit-title">refactor: monolith to microservices</h3>
+        <ul>
+          <li>Led migration from monolithic architecture to microservices</li>
+          <li>Developed backend APIs and services across products</li>
+          <li>Built migration tools using Node.js, MongoDB & RabbitMQ</li>
+        </ul>
+      </article>
+
+      <article class="git-commit">
+        <div class="commit-hash">commit 7cb42aa</div>
+        <h3 class="commit-title">feat: media upload & third-party integrations</h3>
+        <ul>
+          <li>S3-backed media upload with compression & resizing</li>
+          <li>Integrated Bitly, Branch.io, Rebrandly, TinyPNG & Jimp</li>
+          <li>Automated daily revenue & product performance reports</li>
+        </ul>
+      </article>
+
+      <article class="git-commit">
+        <div class="commit-hash">commit 4fe1b21</div>
+        <h3 class="commit-title">feat: search & data sync systems</h3>
+        <ul>
+          <li>Built Elasticsearch-powered user search (Plixxo)</li>
+          <li>Store locator & billing microservices (L’Occitane Brazil)</li>
+          <li>Automated FTP-based customer & order data sync</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>// Education</h2>
       <ul>
         <li><strong>B.E. Information Technology</strong> — Mumbai University (CGPA: 7.75)</li>
-        <li>HSC — Maharashtra State Board (73.54%)</li>
-        <li>SSC — Maharashtra State Board (86.91%)</li>
       </ul>
     </section>
   </main>
@@ -102,5 +160,23 @@
   <footer>
     <p>© Dhrumil Popat</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const root = document.documentElement;
+    const stored = localStorage.getItem("theme");
+
+    if (stored) {
+      root.setAttribute("data-theme", stored);
+      toggle.textContent = stored === "light" ? "🌙" : "☀️";
+    }
+
+    toggle.onclick = () => {
+      const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      toggle.textContent = next === "light" ? "🌙" : "☀️";
+    };
+  </script>
 </body>
 </html>
